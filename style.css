@@ -2,22 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-image: url(nice\ chess\ background.jpg);
-  
+  overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  width: fit-content;
-}
+  background-color: #111;
+  color: #f5f5f5;
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
 }
-
-header h1 {
-  margin: 0;
+.sidee {
+  float:right;
 }
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -25,59 +19,74 @@ header h1 {
 }
 
 section {
-  flex-basis: 48%;
+  margin-top: 500px;
   border-radius: 5px;
-  padding: 100px;
-  border: 1px solid #000;
+  padding: 20px;
+  border: 1px solid #1ecc27;
   box-sizing: border-box;
-  width: 30%; /* Adjust the width to fit your preference */
-    margin: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #10e453;
-    box-sizing: border-box;
-    float: left;
+  width: 340px; 
+  /* Adjust the width to fit your preference */
+ 
+  box-sizing: border-box;
+  float: left;
+  min-height: 200px;
+  height:fit-content;
 }
 
-.section-heading {
-  font-size: 50px;
+.headingz {
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.section-content {
+.contentz {
   text-decoration: underline;
   font-size: 30px;
 }
 
 .location {
-  
-}
-.About{
-
-}
-.playex{
-
-}
-.teachex{
+  float:right;
+  margin-top: 100px;
 
 }
 .languages {
-
+  float:right;
+  margin-top: 400px;
 }
-.availability {
+.About{
+margin-left: 100px;
+margin-top: 800px;
+}
+.teachex{
+  margin-left: 1200px;
+  margin-top: 800px;
+}
 
+.availability {
+  margin-left: 100px;
+  margin-top: 1000px;
 }
 .rating {
-
+  margin-left: 400px;
+  margin-top: 1000px;
 }
-
+.otherex {
+  float: left;
+  margin-right: 20px;
+}
+.skillz {
+  float: left;
+  margin-right: 20px;
+}
 .mainimage {
-  width: 200px;
+  width: 400px;
+  place-content: center;
   height: auto;
 }
 
+
 h1 {
-  color: #333;
+
   margin-bottom: 20px;
 }
 
@@ -87,15 +96,6 @@ h1 {
 }
 
 .contact-info {
-  margin-top: 20px;
-}
-
-.availability {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.about-me {
   margin-top: 20px;
 }
 
@@ -111,15 +111,18 @@ h1 {
   position: fixed;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 200px;
   height: 100vh;
   background-color: #f5f5f5;
   overflow-y: auto;
+  overflow-x: inherit;
   padding: 20px;
+  
 }
 
 .comment {
   margin-bottom: 10px;
+
 }
 
 .commentsection {
@@ -130,4 +133,35 @@ h1 {
 
 .username {
   font-weight: bold;
+}
+.superspecialratingstuf {
+font-style: italic ;
+color: aquamarine;
+}
+
+.mainnorm {
+  width: 100%; /* Set the width to occupy the full available width */
+  max-width: 1000px; /* Optionally set a maximum width to control the content width */
+  float:left;
+  margin: 0 auto; /* Center the content horizontally within the viewport */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  
+}
+
+/* Remove unnecessary margins for the sections */
+section {
+  margin-top: 30px;
+}
+
+/* Adjust the float and margin for the skillz and otherex sections */
+/* Clear the float after the skillz and otherex sections */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.headd{
+  float: right;
+
 }
