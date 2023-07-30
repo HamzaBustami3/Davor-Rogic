@@ -4,12 +4,13 @@ body {
   overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #373333df;
+  background-color: #121212df;
   color: #f5f5f5;
   position: relative;
 }
 .sidee {
   place-content: center;
+  margin-left:30px;
 }
 
 section {
@@ -45,7 +46,7 @@ section {
 .section-pair-fourth {
   display: flex;
   justify-content: space-between;
-  margin-left:100px;
+
 
   
 }
@@ -87,7 +88,8 @@ section {
   margin-top: 400px;
 }
 .profiles {
-  margin-left:100px
+  width:300px;
+  
   
 }
 .About{
@@ -99,6 +101,7 @@ width:400px;
   float:right;
   margin-top:20px;
   margin-left:50px;
+  width: 400px;
 
 }
 
@@ -107,12 +110,13 @@ width:400px;
 }
 .Rating {
  margin-left:100px;
+ width:300px;
 }
 .otherex {
   float:left;
 }
 .skillz {
- 
+ width:300px;
 }
 .linkz {
   color:aqua;
@@ -143,12 +147,8 @@ h1 {
   margin-top: 20px;
 }
 
-.experience {
-  
-}
-
 .teaching-methodology {
-  
+  width:350px;
 }
 .link{
   color: rgb(5, 245, 165);
@@ -211,7 +211,7 @@ color: aquamarine;
 .headd{
   float: right;
   padding: 5px;
-  margin: 10px;
+  margin: 5px;
 }
 .contentzz {
   font-family: cursive;
@@ -226,7 +226,7 @@ color: aquamarine;
 
 .footer {
   
-  position:absolute;
+  left:20px;
   bottom:0;
   width:100%;
 }
@@ -242,8 +242,9 @@ color: aquamarine;
 
 .seccomposerimg {
   float:right;
-  width:300px;
+  width:200px;
   height: auto;
+  margin-left: 10px;
   
 }
 
