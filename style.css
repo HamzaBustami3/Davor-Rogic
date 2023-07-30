@@ -1,87 +1,131 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-image: url(nice\ chess\ background.jpg);
   overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #111;
+  background-color: #373333df;
   color: #f5f5f5;
-
+  position: relative;
 }
 .sidee {
-  float:right;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  place-content: center;
 }
 
 section {
-  margin-top: 500px;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #1ecc27;
   box-sizing: border-box;
-  width: 340px; 
+  width: 250px; 
   /* Adjust the width to fit your preference */
- 
+  margin-top:10px;
+  
   box-sizing: border-box;
-  float: left;
-  min-height: 200px;
+  min-height: 75px;
   height:fit-content;
+}
+/* Wrap each pair of sections in a container */
+.section-pair-first {
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.section-pair-second {
+  display: flex;
+  justify-content: space-between;
+
+}
+.section-pair-third {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.section-pair-fourth {
+  display: flex;
+  justify-content: space-between;
+  margin-left:100px;
+
+  
+}
+
+
+
+/* Adjust the width of each section within the pair */
+.section-pair section {
+  width: calc(50% - 10px); /* Adjust this value as needed */
+}
+
+/* Clear the float after each section pair */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .headingz {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contentz {
-  text-decoration: underline;
-  font-size: 30px;
+  font-family: cursive;
+  font-size: 15px;
 }
 
 .location {
   float:right;
-  margin-top: 100px;
+  margin-top: 50px;
+  height: 50px;
+  left: 400px;
 
 }
 .languages {
   float:right;
   margin-top: 400px;
 }
+.profiles {
+  margin-left:100px
+  
+}
 .About{
-margin-left: 100px;
-margin-top: 800px;
+margin-top: 10px;
+margin-left: 70px;
+width:400px;
 }
 .teachex{
-  margin-left: 1200px;
-  margin-top: 800px;
+  float:right;
+  margin-top:20px;
+  margin-left:50px;
+
 }
 
 .availability {
-  margin-left: 100px;
-  margin-top: 1000px;
+  float:left;
 }
-.rating {
-  margin-left: 400px;
-  margin-top: 1000px;
+.Rating {
+ margin-left:100px;
 }
 .otherex {
-  float: left;
-  margin-right: 20px;
+  float:left;
 }
 .skillz {
-  float: left;
-  margin-right: 20px;
+ 
+}
+.linkz {
+  color:aqua;
+}
+.reasoning {
+  float:left;
 }
 .mainimage {
   width: 400px;
-  place-content: center;
   height: auto;
+  float:left;
+  margin-left: 50px;
+  
 }
 
 
@@ -100,23 +144,29 @@ h1 {
 }
 
 .experience {
-  margin-top: 20px;
+  
 }
 
 .teaching-methodology {
-  margin-top: 20px;
+  
+}
+.link{
+  color: rgb(5, 245, 165);
 }
 
 .comments-section {
   position: fixed;
   top: 0;
   right: 0;
-  width: 200px;
-  height: 100vh;
-  background-color: #f5f5f5;
-  overflow-y: auto;
-  overflow-x: inherit;
+  width: 24%;
+  height:100%;
+ 
+
+  border: 3px solid beige;
+ overflow-y: autoew;
   padding: 20px;
+  color:beige;
+  
   
 }
 
@@ -125,11 +175,10 @@ h1 {
 
 }
 
-.commentsection {
-  width: 100%;
-  border-color: aquamarine;
-  border-style: dashed;
+.pho{
+  left:50px;
 }
+
 
 .username {
   font-weight: bold;
@@ -140,8 +189,8 @@ color: aquamarine;
 }
 
 .mainnorm {
-  width: 100%; /* Set the width to occupy the full available width */
-  max-width: 1000px; /* Optionally set a maximum width to control the content width */
+  width: 70%; /* Set the width to occupy the full available width */
+  max-width: 70; /* Optionally set a maximum width to control the content width */
   float:left;
   margin: 0 auto; /* Center the content horizontally within the viewport */
   overflow-x: hidden; /* Hide horizontal overflow */
@@ -149,9 +198,7 @@ color: aquamarine;
 }
 
 /* Remove unnecessary margins for the sections */
-section {
-  margin-top: 30px;
-}
+
 
 /* Adjust the float and margin for the skillz and otherex sections */
 /* Clear the float after the skillz and otherex sections */
@@ -163,5 +210,52 @@ section {
 
 .headd{
   float: right;
+  padding: 5px;
+  margin: 10px;
+}
+.contentzz {
+  font-family: cursive;
+  font-size: 15px;
+}
+.headingzz{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: cursive;
+}
 
+.footer {
+  
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+.sources{
+  color:aquamarine;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.micro{
+  width: 15px;
+  height:auto;
+}
+
+.seccomposerimg {
+  float:right;
+  width:300px;
+  height: auto;
+  
+}
+
+.secparagraphmain {
+  float: left;
+ 
+  box-shadow:#333;
+
+  width: 400px;
+  height: fit-content;
+  text-decoration: wavy;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 800;
 }
