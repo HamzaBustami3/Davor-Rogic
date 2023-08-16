@@ -160,14 +160,10 @@ h1 {
   right: 0;
   width: 24%;
   height:100%;
- 
-
   border: 3px solid beige;
- overflow-y: autoew;
+  overflow-y: auto;
   padding: 20px;
   color:beige;
-  
-  
 }
 
 .comment {
@@ -182,6 +178,7 @@ h1 {
 
 .username {
   font-weight: bold;
+  font-size: 25px;
 }
 .superspecialratingstuf {
 font-style: italic ;
